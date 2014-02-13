@@ -7,12 +7,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 <packaging>jar</packaging>
  <distributionManagement>
  <repository>
-    <id>CTO-releases</id>
-    <url>http://nexusrepo.cloudapp.net:8081/nexus/content/repositories/CTO-releases</url>
+    <id>releases</id>
+    <url>http://nexusrepo.cloudapp.net:8081/nexus/content/repositories/releases</url>
   </repository>
   <snapshotRepository>
-    <id>CTO-snapshots</id>
-    <url>http://nexusrepo.cloudapp.net:8081/nexus/content/repositories/CTO-snapshots</url>
+    <id>snapshots</id>
+    <url>http://nexusrepo.cloudapp.net:8081/nexus/content/repositories/snapshots</url>
   </snapshotRepository>
 </distributionManagement>
 	<ciManagement>
