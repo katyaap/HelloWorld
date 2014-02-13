@@ -1,33 +1,20 @@
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 <groupId>CTO-Repo</groupId>
 <artifactId>HelloWorld</artifactId>
 <version>1.0-SNAPSHOT</version>
 <modelVersion>4.0.0</modelVersion>
 <packaging>jar</packaging>
-
-<!-- 
-<dependencies>
-
-</dependencies>
- 
-
-<build>
-</build>
-
--->
-<repositories>
-<repository>
- <id>CTO-snapshots</id>
- <name>CTO Snapshot Repository</name>
+ <distributionManagement>
+ <repository>
+    <id>CTO-releases</id>
+    <url>http://nexusrepo.cloudapp.net:8081/nexus/content/repositories/CTO-releases</url>
+  </repository>
+  <snapshotRepository>
+    <id>CTO-snapshots</id>
     <url>http://nexusrepo.cloudapp.net:8081/nexus/content/repositories/CTO-snapshots</url>
-    <snapshots> 
-    <enabled>true</enabled> 
-    </snapshots>
-    <releases>
-    <enabled>false</enabled>
-    </releases>
-</repository>
-</repositories>
+  </snapshotRepository>
+</distributionManagement>
 	<ciManagement>
 		<system>http://ciserver1.cloudapp.net:8080/</system>
 	</ciManagement>
